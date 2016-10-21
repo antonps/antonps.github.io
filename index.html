@@ -1,6 +1,7 @@
 <html>
 
 <head>
+	<script>var start = new Date(milliseconds)</script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="shortcut icon" href="favicon.ico"> -->
@@ -37,61 +38,116 @@
 
 	<section id="intro">
 		<div class="container">
-		<h1>Design<br>Develop<br>Digital</h1>
+		<h1>
+			<span class="title">Design</span>
+			<span class="title" data-delay=1000>Code</span>
+			<span class="title" data-delay=1000>Optimize</span>
+		</h1>
 		</div>
 	</section>
 
 	<section id="about">
-	<div class="container">
-	<p class="lead">92% of visitors scrolled here without any instructions.</p>
+		<div class="container">
+			<h2>FRONT END DEVELOPER</h2>
+			<p class="larger">I help build beautiful websites that load fast and is a pleasure to use. I make users happy to spend in getting what they want. With good web design, everyone wins.</p>
 
-	<h2>Your time and effort is valuable.</h2>
-	<p class="larger">I help build websites that loads fast and is a pleasure to use. Happy users spend and get what they want. Everyone wins.</p>
-
-	<h5>ABOUT ME</h5>
-	<img id="anton" src="anton.png">
-	<p>Professional web developer with over a decade of experience. Trusted to manage the graphic design and technical implementation for dozens of international websites. Hard working and passionate about user experience and visual interface. A natural problem solver who is always looking to improve teamwork, workflow and efficiency.</p>
-	<br>
-	<a href="#" class="btn">Curriculum Vitae</a>
-	<br class="clear">
-	</div>
+			<div class="about-wrapper">
+				<img id="anton" src="anton.png">
+				<h5>ABOUT ME</h5>
+				<hr class="above">
+				<p>Professional web developer with over a decade of experience. Trusted to manage the graphic design and technical implementation for dozens of international websites. Hard working and passionate about user experience and visual interface. A natural problem solver who is always looking to improve teamwork, workflow and efficiency.</p>
+				<br>
+				<a href="http://antonps.com/about" class="btn">Curriculum Vitae</a>
+				<br class="clear">
+			</div>
+		</div>
 	</section>
+	<section id="skills">
+		<div class="container">
+			<h5 class="centered">SKILLS</h5>
+			<div class="skills">
+				<span>HTML</span>
+				<span>CSS</span>
+				<span>jQuery</span>
+				<span>Wordpress</span>
+				<span>Photoshop</span>
+				<span>Illustrator</span>
+				<span>Indesign</span>
+				<span>React</span>
+				<span>Jekyll</span>
+				<span>Rails</span>
+				<span>Analytics</span>
+			</div>
+		</div>
+	</section>
+
+	<section id="portfolio">
+		<div class="container">
+			<h5 class="white">PORTFOLIO</h5>
+			<div class="portfolio-wrapper">
+				<div class="portfolio-item">
+					<h1>AirAsia</h1>
+					<strong>BIG DUTY FREE</strong><br>
+					Front End Developer
+				</div>
+				<div class="portfolio-item">
+					<h1>Epik-Shop</h1>
+					<strong>E-COMMERCE</strong><br>
+					Tech Team Lead
+				</div>
+				<div class="portfolio-item">
+					<h1>CekAja</h1>
+					<strong>FINANCE SITE</strong><br>
+					Lead Developer
+				</div>
+				<div class="portfolio-item">
+					<h1>Tune Labs</h1>
+					<strong>INCUBATOR</strong><br>
+					Web Developer
+				</div>
+				<div class="portfolio-item">
+					<h1>Blackberry</h1>
+					<strong>CONTEST SITES</strong><br>
+					Web Developer
+				</div>
+				<div class="portfolio-item">
+					<h1>TravelerBuddy</h1>
+					<strong>TRAVEL APP</strong><br>
+					Front End Developer
+				</div>
+				<div class="portfolio-item">
+					<h1>MediaLoyal</h1>
+					<strong>LOYALTY POINTS</strong><br>
+					Front End Developer
+				</div>
+				<div class="portfolio-item">
+					<h1>HappyFresh</h1>
+					<strong>SHOPPING SERVICE</strong><br>
+					Front End Developer
+				</div>
+				<div class="portfolio-item">
+					<h1>Atl.as</h1>
+					<strong>TRAVEL COMMUNITY</strong><br>
+					Web Developer
+				</div>
+				<br class="clear">
+			</div>
+			<a href="http://antonps.com/2016.pdf" class="btn btn-white btn-center">View Portfolio PDF</a>
+		</div>
+	</section>
+
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="fliptext.min.js"></script>
 	<script type="text/javascript">
 		var title = $(".title");
 		
-		function flipit(text) {
-		 title.text(text);
-		 title.flipping_text({
-		 	tickerTime: 50
-		 });			
-		}
-
-		function startIt() {
-			title.fadeOut(1000, function(){ 
-				title.show();
-				flipit('Design')
-			});
-			setTimeout(function(){
-				title.fadeOut(1000, function(){ 
-					title.show();
-					flipit('Develop')
-				});
-			}, 6000);
-			setTimeout(function(){
-				title.fadeOut(1000, function(){ 
-					title.show();
-					flipit('Digital')
-				});
-			}, 13000);
-		}
-
-		// startIt();
-
-		// setInterval(function(){
-		// 	startIt();
-		// }, 20000)
+		title.flipping_text({
+			tickerTime: 30
+		});
+		$('.skills span').each(function(i) {
+			var rand = Math.floor(Math.random() * (60 - 30) + 30);
+			$(this).css('font-size', rand +'px');
+		})
 
 	</script>
 </body>

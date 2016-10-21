@@ -24,7 +24,7 @@ body {
 #intro {
 	height: 100%;
 	color: white;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(255,255,255,0.1);
 }
 #intro h1 {
 	/*text-align: center;*/
@@ -34,6 +34,15 @@ body {
 	margin-top: 5vh;
 	display: inline-block;
 	width: 100%;
+}
+.title {
+	display: block;
+}
+.title:first-child {
+	margin-left: 10%;
+}
+.title:nth-child(2) {
+	margin-left: 5%;
 }
 video#bgvid { 
     position: fixed;
@@ -59,7 +68,7 @@ video#bgvid {
 }
 #about {
 	background-color: white;
-	padding: 50px 0;
+	padding: 50px 0 100px;
 }
 #about h2 {
 	font-size: 270%;
@@ -72,13 +81,15 @@ video#bgvid {
 	color: #999;
 }
 .larger {
-	font-size: 180%;
+	font-size: 160%;
+}
+#about .larger {
 	margin-top: 20px;
+	margin-bottom: 80px;
 }
 h5 {
-	border-bottom: 1px solid black;
-	padding-bottom: 5px;
 	font-size: 100%;
+	margin: 0;
 }
 #anton {
 	float: left;
@@ -99,7 +110,7 @@ h5 {
 	margin-bottom: 15px;
 }
 .container {
-	padding-left: 20vw;
+	padding-left: 22vw;
 	padding-right: 5vw;
 	max-width: 800px;
 }
@@ -117,4 +128,73 @@ a {
 a.btn {
 	text-decoration: none;
 	font-weight: bold;
+}
+hr {
+	border: 0;
+	border-top: 1px solid black;
+}
+.about-wrapper {
+	position: relative;
+}
+hr.above {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 20px;
+	width: 100%;
+}
+.skills {
+	font-size: 52px;
+	font-weight: bold;
+	letter-spacing: -0.1rem;
+	text-align: center;
+}
+.skills span {
+	display: inline-block;
+	margin: 5px;
+}
+#skills {
+	padding: 70px 0 150px;
+	color: white;
+}
+.white {
+	color: white;
+}
+h5.centered {
+	width: 200px;
+	margin: 0 auto 50px;
+	border-bottom: 1px solid white;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.portfolio-wrapper {
+	margin: 15px 0 40px;
+}
+.portfolio-item {
+	background-color: white;
+	margin: 1px;
+	float: left;
+	width: 33%;
+	text-align: center;
+	height: 200px;
+	font-size: 16px;
+}
+.portfolio-item h1 {
+	letter-spacing: -0.1rem;
+	margin-bottom: 0;
+}
+.portfolio-item strong {
+	color: #999;
+}
+.btn-white {
+	border-color: white;
+	color: white;
+}
+.btn-white:hover {
+	background-color: white;
+	color: black;
+}
+.btn-center {
+	display: inline-block;
+	margin-bottom: 100px;
 }
