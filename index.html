@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <title>Anton Saputro - Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<section id="intro">
+
+	<video playsinline autoplay muted loop id="bgvid">
+	    <source src="bgmov.mp4" type="video/mp4">
+	</video>
+		<span id="menu">
+			<svg width="30px" height="30px" viewBox="0 0 20 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	    	<g>
+	        <rect id="Rectangle" fill="#FFFFFF" x="0" y="5" width="20" height="2"></rect>
+	        <rect id="Rectangle" fill="#FFFFFF" x="0" y="12" width="20" height="2"></rect>
+	        <rect id="Rectangle" fill="#FFFFFF" x="0" y="19" width="20" height="2"></rect>
+	    	</g>
+			</svg>
+		</span>
+		<img id="logo" src="logo.svg">
+		<h1 class="title"></h1>
+	</section>
+
+	<!-- <section id="about">
+		
+	<p class="lead">92% of visitors scrolled down here even though there was no clear indicator to do so.</p>
+
+	<h2>As a user, your time and effort is valuable.</h2>
+	<p class="larger">I help build websites that loads fast and is a pleasure to use. <br>Happy users spend and get what they want. Everyone wins.</p>
+
+	<h5>ABOUT ME</h5>
+	<img id="anton" src="anton.png">
+	<p>Professional web developer with over a decade of experience. Trusted to manage the graphic design and technical implementation for dozens of international websites. Hard working and passionate about user experience and visual interface. A natural problem solver who is always looking to improve teamwork, workflow and efficiency.</p>
+	<br class="clear">
+	</section> -->
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="fliptext.min.js"></script>
+	<script type="text/javascript">
+		var title = $(".title");
+		
+		function flipit(text) {
+		 title.text(text);
+		 title.flipping_text({
+		 	tickerTime: 50
+		 });			
+		}
+
+		function startIt() {
+			title.fadeOut(1000, function(){ 
+				title.show();
+				flipit('Design')
+			});
+			setTimeout(function(){
+				title.fadeOut(1000, function(){ 
+					title.show();
+					flipit('Develop')
+				});
+			}, 6000);
+			setTimeout(function(){
+				title.fadeOut(1000, function(){ 
+					title.show();
+					flipit('Discover')
+				});
+			}, 13000);
+		}
+
+		startIt();
+
+		setInterval(function(){
+			startIt();
+		}, 20000)
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-size: 18px;
+	font-family: Karla, sans-serif;
+}
+#menu {
+	float: right;
+	margin: 30px;
+}
+#menu strong {
+	position: relative;
+	top: -8px;
+}
+#intro {
+	height: 100%;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+}
+#intro h1 {
+	text-align: center;
+	font-size: 18vw;
+	letter-spacing: -1.5vw;
+	margin-top: 10vh;
+}
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
+#logo {
+	width: 6vw;
+	min-width: 40px;
+	margin: 20px;
+}
+#about {
+	background-color: white;
+	padding: 50px 10vw;
+}
+#about h2 {
+	font-size: 270%;
+	letter-spacing: -2px;
+	line-height: 1.2;
+	margin: 0;
+}
+.lead {
+	font-size: 130%;
+	color: #999;
+}
+.larger {
+	font-size: 180%;
+	margin-top: 20px;
+}
+h5 {
+	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+	font-size: 100%;
+}
+#anton {
+	float: left;
+	margin-right: 15px;
+}
+.clear {
+	clear: both;
+}
