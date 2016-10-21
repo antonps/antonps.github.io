@@ -10,12 +10,8 @@
 
 <body>
 
-	<section id="intro">
-
-	<video playsinline autoplay muted loop id="bgvid">
-	    <source src="bgmov.mp4" type="video/mp4">
-	</video>
-		<span id="menu">
+	<header id="static">
+		<!-- <span id="menu">
 			<svg width="30px" height="30px" viewBox="0 0 20 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	    	<g>
 	        <rect id="Rectangle" fill="#FFFFFF" x="0" y="5" width="20" height="2"></rect>
@@ -23,23 +19,43 @@
 	        <rect id="Rectangle" fill="#FFFFFF" x="0" y="19" width="20" height="2"></rect>
 	    	</g>
 			</svg>
-		</span>
-		<img id="logo" src="Logo.svg">
-		<h1 class="title"></h1>
+		</span> -->
+		<img id="logo" src="logo.svg"><br>
+		<strong>Anton<br> &nbsp; Saputro</strong>
+		<ul class="menu">
+		<li>
+		About</li><li>
+		Portfolio</li><li>
+		Projects</li><li>
+		Blog</li>
+		</ul>
+	</header>
+
+	<video playsinline autoplay muted loop id="bgvid">
+	    <source src="bgmov.mp4" type="video/mp4">
+	</video>
+
+	<section id="intro">
+		<div class="container">
+		<h1>Design<br>Develop<br>Digital</h1>
+		</div>
 	</section>
 
-	<!-- <section id="about">
-		
-	<p class="lead">92% of visitors scrolled down here even though there was no clear indicator to do so.</p>
+	<section id="about">
+	<div class="container">
+	<p class="lead">92% of visitors scrolled here without any instructions.</p>
 
-	<h2>As a user, your time and effort is valuable.</h2>
-	<p class="larger">I help build websites that loads fast and is a pleasure to use. <br>Happy users spend and get what they want. Everyone wins.</p>
+	<h2>Your time and effort is valuable.</h2>
+	<p class="larger">I help build websites that loads fast and is a pleasure to use. Happy users spend and get what they want. Everyone wins.</p>
 
 	<h5>ABOUT ME</h5>
 	<img id="anton" src="anton.png">
 	<p>Professional web developer with over a decade of experience. Trusted to manage the graphic design and technical implementation for dozens of international websites. Hard working and passionate about user experience and visual interface. A natural problem solver who is always looking to improve teamwork, workflow and efficiency.</p>
+	<br>
+	<a href="#" class="btn">Curriculum Vitae</a>
 	<br class="clear">
-	</section> -->
+	</div>
+	</section>
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="fliptext.min.js"></script>
 	<script type="text/javascript">
@@ -66,16 +82,16 @@
 			setTimeout(function(){
 				title.fadeOut(1000, function(){ 
 					title.show();
-					flipit('Discover')
+					flipit('Digital')
 				});
 			}, 13000);
 		}
 
-		startIt();
+		// startIt();
 
-		setInterval(function(){
-			startIt();
-		}, 20000)
+		// setInterval(function(){
+		// 	startIt();
+		// }, 20000)
 
 	</script>
 </body>

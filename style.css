@@ -6,8 +6,15 @@ body {
 	font-size: 18px;
 	font-family: Karla, sans-serif;
 }
+#static {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	padding: 0 5vw;
+	color: white;
+}
 #menu {
-	float: right;
 	margin: 30px;
 }
 #menu strong {
@@ -17,13 +24,16 @@ body {
 #intro {
 	height: 100%;
 	color: white;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.3);
 }
 #intro h1 {
-	text-align: center;
+	/*text-align: center;*/
 	font-size: 18vw;
+	line-height: 0.8;
 	letter-spacing: -1.5vw;
-	margin-top: 10vh;
+	margin-top: 5vh;
+	display: inline-block;
+	width: 100%;
 }
 video#bgvid { 
     position: fixed;
@@ -43,12 +53,13 @@ video#bgvid {
 }
 #logo {
 	width: 6vw;
-	min-width: 40px;
-	margin: 20px;
+	min-width: 50px;
+	margin-top: 6vh;
+	margin-bottom: 10px;
 }
 #about {
 	background-color: white;
-	padding: 50px 10vw;
+	padding: 50px 0;
 }
 #about h2 {
 	font-size: 270%;
@@ -75,4 +86,35 @@ h5 {
 }
 .clear {
 	clear: both;
+}
+.menu {
+	list-style: none;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 80%;
+	letter-spacing: 2px;
+	margin-top: 6vh;
+}
+.menu li {
+	margin-bottom: 15px;
+}
+.container {
+	padding-left: 20vw;
+	padding-right: 5vw;
+	max-width: 800px;
+}
+.btn {
+	border: 2px solid black;
+	padding: 0.8em 1em;
+}
+.btn:hover {
+	color: white;
+	background-color: black;
+}
+a {
+	color: black;
+}
+a.btn {
+	text-decoration: none;
+	font-weight: bold;
 }
