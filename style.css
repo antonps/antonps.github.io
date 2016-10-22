@@ -245,11 +245,11 @@ h5.centered {
 	position: relative;
 	top: -8px;
 }
-.menu a {
+header a {
 	color: white;
 	text-decoration: none;
 }
-.menu a:hover {
+header a:hover {
 	font-weight: bold;
 }
 .menu-mobile {

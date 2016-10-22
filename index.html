@@ -12,23 +12,23 @@
 <body>
 
 	<header id="static">
-		<img id="logo" src="img/Logo.svg"><br>
-		<strong>Anton<br> &nbsp; Saputro</strong>
+		<a href="#intro"><img id="logo" src="img/Logo.svg"><br>
+		<strong>Anton<br> &nbsp; Saputro</strong></a>
 		<ul class="menu">
 		<li><a href="#about">About</a></li>
 		<li><a href="#portfolio">Portfolio</a></li>
-		<li><a href="#projects">Projects</a></li>
-		<li><a href="#blog">Blog</a></li>
+		<!-- <li><a href="#projects">Projects</a></li> -->
+		<li><a href="http://antonps.com/blog">Blog</a></li>
 		</ul>
 	</header>
 
 	<header id="mobile">
-	<img id="logo-mobile" src="img/Logo.svg">
+		<a href="#intro"><img id="logo-mobile" src="img/Logo.svg"></a>
 		<ul class="menu menu-mobile">
 		<li><a href="#about">About</a></li>
 		<li><a href="#portfolio">Portfolio</a></li>
-		<li><a href="#projects">Projects</a></li>
-		<li><a href="#blog">Blog</a></li>
+		<!-- <li><a href="#projects">Projects</a></li> -->
+		<li><a href="http://antonps.com/blog">Blog</a></li>
 		</ul>
 	</header>
 
@@ -177,6 +177,22 @@
 			var rand = Math.floor(Math.random() * (60 - 30) + 30);
 			$(this).css('font-size', rand +'px');
 		})
+
+		// Smooth scroll to
+	    $('a[href*="#"]:not([href="#"])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+	        || location.hostname == this.hostname) {
+
+	        var target = $(this.hash);
+	        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	           if (target.length) {
+	                $('html,body').animate({
+	                     scrollTop: target.offset().top
+	                }, 1000);
+	            return false;
+	            }
+	        }
+	    });
 
 	</script>
 </body>
